@@ -1,0 +1,143 @@
+/*style for home page.*/
+
+
+* {box-sizing:border-box}
+#home-page-box {
+	background-color: transparent;
+	width: 100%;
+
+}
+
+.shop-gallery-slides-container {
+
+	position: relative;
+	max-width: 682px;
+	margin:0 auto;
+
+	background-color: #eeccff;
+	text-align: center;
+
+}
+
+.shop-gallery-slides {
+	display: none;
+}
+
+.prev_btn, .next_btn {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: red;
+	font-weight: bold;
+	font-size:20px;
+	transition: 0.6s ease;
+	border-radius:0 3px 3px 0;
+
+}
+
+.prev_btn {
+	left: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+.next_btn {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+.prev_btn:hover, .next_btn:hover {
+	background-color: rgba(0,0,0,0.8);
+}
+
+.caption-text {
+	color: #c44dff;
+	font-size: 14px;
+	padding: 12px 12px;
+	position: absolute;
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
+}
+
+.number-text {
+	color: #c44dff;
+	font-size: 14px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+}
+
+.dot {
+	cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.myFade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+#menuTile {
+	height: 350px;
+	position: relative;
+  	/*border: 1px solid #1a1aff;*/
+  	overflow: hidden;
+	background: url('../images/Inside-View/placeHolder_02.jpg') no-repeat;
+  	background-position: center;
+}
+
+#specialTile {
+	height: 350px;
+	position: relative;
+  	/*border: 1px solid #1a1aff;*/
+  	overflow: hidden;
+	background: url('../images/Inside-View/placeHolder_02.jpg') no-repeat;
+  	background-position: center;
+}
+
+
+
+.tile_text {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 1.6em;
+	text-transform: uppercase;
+	background-color: #000;
+	color: #fff;
+	opacity: .6;
+}
+
+#menuTileRow {
+	position: relative;
+	width: 680px;
+	margin: 0 auto;	
+
+}

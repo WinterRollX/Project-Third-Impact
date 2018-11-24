@@ -1,0 +1,56 @@
+/*General setting: */
+body {
+	background-image: url('../images/Inside-View/backgroundImg.jpg');
+}
+#header-nav {
+	background-color: rgba(179,179,204,0.4);
+	width: 100%;
+	height: 200px;
+	border-style: none;
+	margin-bottom: 0px;
+
+}
+
+#footer-box {
+	background-color: rgba(179,179,204,0.4);
+	width: 100%;
+	height: 200px;
+}
+
+#logo-img {
+  background-image: url("../images/logo_200x150_placeHolder.jpg");
+  width: 200px;
+  height: 150px;
+  margin: 25px 30px 25px 0;
+}
+
+#nav-list {
+	background-color: transparent;
+	text-align: center;
+	width:600px;
+	height: 150px;
+	margin: 25px 0px 25px 0;
+}
+.navbar-brand a h1 {
+	max-width: 220px;
+	font-size: 1.3em;
+	text-align: center;
+
+}
+
+.glyphicon {
+	font-size: 35px;
+}
+
+.active {
+	font-style: bold;
+}
+
+.footer-text {
+	position: relative;
+	margin: auto;
+	text-align: center;
+	font-size: 1.4em;
+	padding-top: 23px;
+
+}

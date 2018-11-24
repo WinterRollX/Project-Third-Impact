@@ -1,0 +1,37 @@
+.menu-container {
+	position: relative;
+}
+
+.menu-container:a:link {
+	color:black;
+}
+
+.loading-icon-img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.category-caption {
+	text-align:center;
+	text-shadow: 2px 2px 5px grey;
+	font-size: 30px;
+	font-style: italic;
+}
+.category-ul {
+	list-style-type:circle;
+	color:transparent;
+	padding-left:0;
+	
+}
+.category-item {
+	width: 50%;
+	margin-left: 25%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+	font-size: 30px;
+	text-shadow: 1px 1px 5px black;
+}
+.category-item-a:hover {
+	color:red;
+}

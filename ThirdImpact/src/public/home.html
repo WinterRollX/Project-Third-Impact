@@ -1,0 +1,68 @@
+<!-- home state view template -->
+
+<!-- including an image gallery, a menu button and a lunch special button. -->
+
+<div id="home-page-box" class="container" ng-controller="HomePageController">
+	<!-- still use bootstrap system to arrange the three grid for small devices. -->
+	<div id="internalShopGallery" class="shop-gallery-slides-container">
+		<!-- start of shop gallery here. -->
+		<div class="shop-gallery-slides myFade">
+			<div class="number-text">1/4</div>
+			<img src="images/Inside-View/placeHolder_01.jpg">
+			<div class="caption-text" >text01</div>
+		</div>
+
+		<div class="shop-gallery-slides myFade">
+			<div class="number-text">2/4</div>
+			<img src="images/Inside-View/placeHolder_01.jpg">
+			<div class="caption-text" >text02</div>
+		</div>
+
+		<div class="shop-gallery-slides myFade">
+			<div class="number-text">3/4</div>
+			<img src="images/Inside-View/placeHolder_01.jpg">
+			<div class="caption-text" >text03</div>
+		</div>
+
+		<div class="shop-gallery-slides myFade">
+			<div class="number-text">4/4</div>
+			<img src="images/Inside-View/placeHolder_01.jpg">
+			<div class="caption-text" >text04</div>
+		</div>
+
+		<a class="prev_btn" ng-click="plusSlides(-1);">&#10094;</a>
+		<a class="next_btn" ng-click="plusSlides(1);">&#10095;</a>
+	</div>
+	<br>
+	<div style="text-align: center">
+		<span class = "dot" ng-click="currentSlide(1)"></span>
+		<span class = "dot" ng-click="currentSlide(2)"></span>
+		<span class = "dot" ng-click="currentSlide(3)"></span>
+		<span class = "dot" ng-click="currentSlide(4)"></span>
+	</div>
+
+
+	<div id="menuTileRow" class="row">
+		<a href=""><div id="menuTile" class="home-page-big-tile col-sm-6">
+			<span class="tile_text">Menu</span>
+		</div>
+	</a>
+
+	<a href="">
+		<div id="specialTile" class="home-page-big-tile col-sm-6">
+			<span class="tile_text">Lunch Special</span> 
+		</div>
+	</a>
+</div>
+
+
+
+</div><!-- end of gallery container -->
+
+
+<!-- Object 00: put this code block and keep them function as before. -->
+
+
+
+</div>
+

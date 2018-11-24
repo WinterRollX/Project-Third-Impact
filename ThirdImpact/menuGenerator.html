@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Menu Json file geneartor</title>
+</head>
+<body>
+
+<p id="json"></p>
+<script>
+	let outputDOM = document.getElementById("json");
+	outputDOM.innerText = getMenuObjEng();
+	console.log(JSON.parse(outputDOM.innerText));
+
+
+function getMenuObjEng() {
+	// here we input menu by hand.
+	let result = {
+		"categories":[{
+			"category_name": "Appetizer",
+			"category_description":null,
+			"category_code":"A",
+			"category_dishes": [
+			{"dish_name":"test Dish1", "dish_price":4.95,"dish_spicy": 1,"dish_pic": null,"dish_note":null},
+			{"dish_name":"test Dish2", "dish_price":11.95,"dish_spicy": 0,"dish_pic": null,"dish_note":null},
+			{"dish_name":"test Dish3", "dish_price":9.95,"dish_spicy": 0,"dish_pic": null,"dish_note":null},
+			{"dish_name":"test Dish4", "dish_price":28.95,"dish_spicy": 1,"dish_pic": null,"dish_note":"Served with white rice."}
+			]
+		},{
+			"category_name": "Flavored dishes",
+			"category_description":null,
+			"category_code":"B",
+			"category_dishes": [
+			{"dish_name":"test Dish1", "dish_price":4.95,"dish_spicy": 1,"dish_pic": null,"dish_note":null},
+			{"dish_name":"test Dish2", "dish_price":11.95,"dish_spicy": 0,"dish_pic": null,"dish_note":null},
+			{"dish_name":"test Dish3", "dish_price":9.95,"dish_spicy": 0,"dish_pic": null,"dish_note":null},
+			{"dish_name":"test Dish4", "dish_price":28.95,"dish_spicy": 1,"dish_pic": null,"dish_note":"Served with white rice."}
+			]
+		},{
+			"category_name": "BBQ & Grill",
+			"category_description":null,
+			"category_code":"C",
+			"category_dishes": [
+			{"dish_name":"test Dish1", "dish_price":4.95,"dish_spicy": 1,"dish_pic": null,"dish_note":null},
+			{"dish_name":"test Dish2", "dish_price":11.95,"dish_spicy": 0,"dish_pic": null,"dish_note":null},
+			{"dish_name":"test Dish3", "dish_price":9.95,"dish_spicy": 0,"dish_pic": null,"dish_note":null},
+			{"dish_name":"test Dish4", "dish_price":28.95,"dish_spicy": 1,"dish_pic": null,"dish_note":"Served with white rice."}
+			]
+		},{
+			"category_name": "Speciallities",
+			"category_description":null,
+			"category_code":"D",
+			"category_dishes": [
+			{"dish_name":"test Dish1", "dish_price":4.95,"dish_spicy": 1,"dish_pic": null,"dish_note":null},
+			{"dish_name":"test Dish2", "dish_price":11.95,"dish_spicy": 0,"dish_pic": null,"dish_note":null},
+			{"dish_name":"test Dish3", "dish_price":9.95,"dish_spicy": 0,"dish_pic": null,"dish_note":null},
+			{"dish_name":"test Dish4", "dish_price":28.95,"dish_spicy": 1,"dish_pic": null,"dish_note":"Served with white rice."}
+			]
+		},{
+			"category_name": "Rice & noodles",
+			"category_description":null,
+			"category_code":"E",
+			"category_dishes": [
+			{"dish_name":"test Dish1", "dish_price":4.95,"dish_spicy": 1,"dish_pic": null,"dish_note":null},
+			{"dish_name":"test Dish2", "dish_price":11.95,"dish_spicy": 0,"dish_pic": null,"dish_note":null},
+			{"dish_name":"test Dish3", "dish_price":9.95,"dish_spicy": 0,"dish_pic": null,"dish_note":null},
+			{"dish_name":"test Dish4", "dish_price":28.95,"dish_spicy": 1,"dish_pic": null,"dish_note":"Served with white rice."}
+			]
+		},{
+			"category_name": "Lunch Special",
+			"category_description":"Soft drink inclued, add addtional chicken kabable for additional $1.0",
+			"category_code":"F",
+			"category_dishes": [
+			{"dish_name":"test Dish1", "dish_price":4.95,"dish_spicy": 1,"dish_pic": null,"dish_note":null},
+			{"dish_name":"test Dish2", "dish_price":11.95,"dish_spicy": 0,"dish_pic": null,"dish_note":null},
+			{"dish_name":"test Dish3", "dish_price":9.95,"dish_spicy": 0,"dish_pic": null,"dish_note":null},
+			{"dish_name":"test Dish4", "dish_price":28.95,"dish_spicy": 1,"dish_pic": null,"dish_note":"Served with white rice."}
+			]
+		}]
+	};
+	return JSON.stringify(result);
+};
+
+
+
+</script>
+
+
+</body>
+</html>
