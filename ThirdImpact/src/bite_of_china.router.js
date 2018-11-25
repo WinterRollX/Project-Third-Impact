@@ -8,7 +8,8 @@
 		var homeState = {
 	    name: 'home',
 	    url: '/home',
-	    templateUrl: 'src/public/home.html'
+	    controller: 'HomeStateController as HomeStateController', 
+	    templateUrl: 'src/public/home.state.template.html'
 	  }
 
 	  	var menuState = {
