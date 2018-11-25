@@ -1,13 +1,10 @@
-<div class="menu-container">
-<link rel="stylesheet" type="text/css" href="css/menu.css">
+
 <div class="category-container">
 	<div class="category-caption"><h1>Menu Categories</h1></div>
-	<ul ng-if="$ctrl.categoriesList.length > 0" class = "category-ul">
-		<li class = "category-item" ng-repeat = "category in $ctrl.categoriesList">
+	<ul ng-if="$ctrl.categoriesList.categories.length > 0" class = "category-ul">
+		<li class = "category-item" ng-repeat = "category in $ctrl.categoriesList.categories">
 			<a class = "category-item-a" href="https://www.baidu.com">{{category.category_name}}</a>
 		</li>
 	</ul>
-	<span ng-if="$ctrl.categoriesList.length === 0">No categories data aviable.</span>
+	<span ng-if="$ctrl.categoriesList.categories.length === 0">No categories data aviable.</span>
 </div><!-- end of container -->
-
-</div>

@@ -2,15 +2,9 @@
 	// router seting for bite_of_china
 	var myApp = angular.module("Bite_of_china");
 	myApp.config(routConfig);
-	
-	myApp.config(function($urlRouterProvider){
-    // when there is an empty route, redirect to /index   
-    $urlRouterProvider.otherwise('/home');
-	})
-
-
-	routConfig.$inject = ["$stateProvider"];
-	function routConfig($stateProvider) {
+	routConfig.$inject = ["$stateProvider",'$urlRouterProvider'];
+	function routConfig($stateProvider,$urlRouterProvider) {
+		$urlRouterProvider.otherwise('/home');
 		var homeState = {
 	    name: 'home',
 	    url: '/home',
@@ -20,15 +14,14 @@
 	  	var menuState = {
 	    name: 'menu',
 	    url: '/menu',
-	    templateUrl: 'src/public/menu.html'
+	    controller: 'CategoriesStateController as CategoriesStateController',
+	    templateUrl: 'src/public/categories.state.template.html',
+	    resolve: {
+	    	categoriesList: ['MenuService',function (MenuService) {
+	    		return MenuService.getMenuData();
+	    	}]
+	    }
 	  }
-
-	  	var lunchSpecialState = {
-	  		name: 'lunchSpecial',
-	  		url: '/lunchSpecial',
-	  		template: '<h2>This is a list of dishes</h2>'
-
-	  	}
 
 	  	var aboutState = {
 	  		name: 'about',
@@ -39,7 +32,6 @@
 
 		$stateProvider.state(homeState);
 		$stateProvider.state(menuState);
-		$stateProvider.state(lunchSpecialState);
 		$stateProvider.state(aboutState);
 
 	}
