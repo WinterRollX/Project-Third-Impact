@@ -1,0 +1,12 @@
+<div class="items-list-container">
+	<div class="items-list-caption">Here are our menu for this category</div>
+	<ul class>
+		<li class="items-item" ng-repeat = 'item in $ctrl.itemsList'>
+		<span>{{item.dish_name}} Price is ${{item.dish_price}}</span>
+		<span ng-if = 'item.dish_spicy === 1'> Warning:spicy</span> 
+		</li>
+	</ul>
+
+
+
+</div>
