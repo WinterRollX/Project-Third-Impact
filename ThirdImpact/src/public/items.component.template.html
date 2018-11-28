@@ -1,12 +1,16 @@
+
 <div class="items-list-container">
-	<div class="items-list-caption">Here are our menu for this category</div>
-	<ul class>
-		<li class="items-item" ng-repeat = 'item in $ctrl.itemsList'>
-		<span>{{item.dish_name}} Price is ${{item.dish_price}}</span>
-		<span ng-if = 'item.dish_spicy === 1'> Warning:spicy</span> 
+
+	<div class="items-list-caption" ng-if='$ctrl.itemsCaption !== null'>{{$ctrl.itemsCaption}}</div>
+	<ul >
+		<li class="items-item-li" ng-repeat = 'item in $ctrl.itemsList'>
+			<div class="items-dish-container">
+				<img src="https://via.placeholder.com/150">
+				<span class= 'items-dish-name'>{{item.dish_name}}</span>
+				<img class= 'items-dish-spicy' src= 'images/spicy_icon.png' ng-if = 'item.dish_spicy === 1'> 
+				<span class='items-dish-price'>${{item.dish_price}}</span>
+				
+			</div>
 		</li>
 	</ul>
-
-
-
 </div>

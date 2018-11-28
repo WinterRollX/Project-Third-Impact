@@ -14,13 +14,17 @@
 
 	  	var menuState = {
 	    name: 'menu',
-	    url: '/menu',
+	    url: '/menu/{menuIndex}',
 	    controller: 'CategoriesStateController as CategoriesStateController',
 	    templateUrl: 'src/public/categories.state.template.html',
 	    resolve: {
 	    	categoriesList: ['MenuService',function (MenuService) {
 	    		return MenuService.getMenuData();
-	    	}]
+	    	}
+	    	],
+			menuIndex: ['$stateParams',function ($stateParams) {
+				return $stateParams.menuIndex;
+			}]
 	    }
 	  }
 

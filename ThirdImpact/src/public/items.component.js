@@ -4,7 +4,8 @@
 	myApp.component('items',{
 		templateUrl:'src/public/items.component.template.html',
 		bindings:{
-			itemsList:'<'
+			itemsList:'<',
+			itemsCaption:'<'
 		}
 
 	});

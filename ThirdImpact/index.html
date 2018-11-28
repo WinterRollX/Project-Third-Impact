@@ -10,6 +10,8 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/bite_of_china.css">
 	<link rel="stylesheet" type="text/css" href="css/bite_of_china_home.css">
+	<link rel="stylesheet" type="text/css" href="css/items.css">
+	<link rel="stylesheet" type="text/css" href="css/menu.css">
 	<!-- favicon -->
 	<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
 	<!-- jQuery library -->
@@ -29,7 +31,7 @@
 					</a>
 
 					<div class="navbar-brand">
-						<a href="index.html"><h1>西游记 <br>A Bite of China</h1></a>
+						<a href="index.html" class="header-shop-brand-text"><h1>西游记 <br>A Bite of China</h1></a>
 					</div>
 
 					<button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="true">
@@ -47,11 +49,11 @@
 								<span class="glyphicon glyphicon-home"></span> Home</a>
 							</li>
 							<li id="navMenuButton">
-								<a ui-sref="menu" ui-sref-active="active">
+								<a ui-sref="menu({menuIndex:0})" ui-sref-active="active">
 									<span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Menu</a>
 								</li>
 								<li>
-									<a ui-sref="home" ui-sref-active="active">
+									<a ui-sref="menu({menuIndex:5})" ui-sref-active="active">
 										<span class="glyphicon glyphicon-usd"></span><br class="hidden-xs"> Luanch<br class="hidden-xs"> Special</a>
 									</li>
 									<li>
@@ -60,7 +62,7 @@
 										</li>
 										<li id="phone" class="hidden-xs">
 											<a href="tel:410-602-5008">
-												<span>410-602-5008</span></a><div>* Pick up only</div>
+												<span class="shop-tel">410-602-5008</span></a><div class="pick-up-notice">* Pick up only</div>
 											</li>
 										</ul><!-- #nav-list -->
 									</div><!-- .collapse .navbar-collapse -->

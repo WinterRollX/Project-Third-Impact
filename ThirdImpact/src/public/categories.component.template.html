@@ -1,9 +1,9 @@
 
 <div class="category-container">
-	<div class="category-caption"><h1>Menu Categories</h1></div>
+	<div class="category-caption"><h1>Menu</h1></div>
 	<ul ng-if="$ctrl.categoriesList.categories.length > 0" class = "category-ul">
 		<li class = "category-item" ng-repeat = "category in $ctrl.categoriesList.categories">
-			<span class = "category-item-a" ng-click = '$ctrl.onClickCategory({index:$index});'>{{category.category_name}}</span>
+			<span class = "category-item-span" ng-click = '$ctrl.onClickCategory({index:$index});'>{{category.category_name}}</span>
 		</li>
 	</ul>
 	<span ng-if="$ctrl.categoriesList.categories.length === 0">No categories data aviable.</span>
